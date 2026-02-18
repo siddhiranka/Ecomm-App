@@ -1,7 +1,7 @@
 # Node version-package we are using to build the application
   FROM node:22-alpine AS builder
 
-  WORKDIR/app
+  WORKDIR /app
 
   COPY package*.json ./
 
