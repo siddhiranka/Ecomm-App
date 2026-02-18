@@ -26,7 +26,7 @@ jobs:
     - name : Build and Push Backend
       uses : docker/build-push-action@v5
       with :
-        context : ./backend            # folder where the script is to be implemented
+        context : ./backend             # folder where the script is to be implemented
         push : true                    # command that ensure push
         tags : ${{ secrets.DOCKER_USERNAME }}/ecommerce-application-backend:latest
 
